@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/choose_region"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:text="  Please choose regions."
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:background="#0000cd" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:gravity="bottom"
+        android:background="@drawable/nihonchizu2"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_kyushu"
+        android:padding="10dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Kyushu"
+        android:background="#fd0000"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_kanto"
+        android:padding="10dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Kanto"
+        android:background="#a498fb98"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_hokkaido"
+        android:padding="10dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Hokkaido"
+        android:background="#ca3636f8"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignRight="@+id/button_kanto"
+        android:layout_alignEnd="@+id/button_kanto"
+        android:textSize="15sp" />
+
+</RelativeLayout>
